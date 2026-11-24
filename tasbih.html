@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>السبحة الإلكترونية — أسماء مختار الحداد</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-dark:#0a1410;--bg-mid:#12211a;--bg-card:#1a2b22;--gold:#c9a227;--gold-light:#e8d9a0;--gold-bright:#f0d97a;--ivory:#f5f0e6;--muted:#8a9a8f;--shadow:0 20px 60px rgba(0,0,0,.6);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--ivory);font-family:'Amiri',serif;direction:rtl;line-height:1.9;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 10%,rgba(201,162,39,.10) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(201,162,39,.08) 0%,transparent 45%),radial-gradient(circle at 50% 50%,rgba(26,43,34,.6) 0%,transparent 65%);animation:pulseBg 14s ease-in-out infinite;}
+@keyframes pulseBg{0%,100%{opacity:.8;}50%{opacity:1;}}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(1px 1px at 20% 30%,rgba(232,217,160,.5),transparent),radial-gradient(1px 1px at 60% 70%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 80% 20%,rgba(232,217,160,.3),transparent),radial-gradient(1px 1px at 40% 90%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 90% 60%,rgba(232,217,160,.3),transparent);background-size:100% 100%;animation:twinkle 8s ease-in-out infinite alternate;}
+@keyframes twinkle{0%{opacity:.4;}100%{opacity:1;}}
+
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(10,20,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,162,39,.25);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.topbar .brand{font-family:'Reem Kufi',sans-serif;font-size:22px;color:var(--gold-light);font-weight:700;display:flex;align-items:center;gap:10px;}
+.topbar .brand::before{content:'☪';font-size:28px;color:var(--gold);}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap;}
+.topbar nav a{color:var(--ivory);text-decoration:none;padding:7px 14px;border:1px solid rgba(201,162,39,.3);border-radius:8px;font-size:15px;transition:all .3s;}
+.topbar nav a:hover,.topbar nav a.active{background:rgba(201,162,39,.2);border-color:var(--gold);color:var(--gold-bright);}
+
+.page-header{text-align:center;padding:90px 20px 60px;background:linear-gradient(180deg,var(--bg-mid) 0%,var(--bg-dark) 100%);border-bottom:1px solid rgba(201,162,39,.2);position:relative;overflow:hidden;}
+.page-header::before{content:'۞';position:absolute;top:40px;right:50%;transform:translateX(50%);font-size:70px;color:rgba(201,162,39,.12);}
+.page-header h1{font-family:'Aref Ruqaa',serif;font-size:clamp(40px,6.5vw,76px);color:var(--gold-light);margin-bottom:12px;text-shadow:0 0 60px rgba(201,162,39,.5);letter-spacing:2px;position:relative;}
+.page-header p{color:var(--gold);font-size:clamp(17px,2.5vw,22px);font-family:'Reem Kufi',sans-serif;position:relative;letter-spacing:1px;}
+
+main{max-width:750px;margin:0 auto;padding:50px 24px 90px;}
+
+.dhikr-picker{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:40px;}
+.dhikr-picker button{background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.3);color:var(--ivory);padding:9px 18px;border-radius:22px;cursor:pointer;font-family:'Amiri',serif;font-size:15px;transition:all .3s;}
+.dhikr-picker button:hover{background:rgba(201,162,39,.2);}
+.dhikr-picker button.active{background:var(--gold);color:var(--bg-dark);font-weight:700;border-color:var(--gold-bright);box-shadow:0 0 22px rgba(201,162,39,.5);}
+
+.target-picker{display:flex;justify-content:center;gap:10px;margin-bottom:40px;}
+.target-picker button{background:transparent;border:1px solid rgba(201,162,39,.4);color:var(--gold-light);padding:7px 20px;border-radius:8px;cursor:pointer;font-family:'Reem Kufi',sans-serif;font-size:14px;transition:all .3s;}
+.target-picker button:hover{background:rgba(201,162,39,.15);}
+.target-picker button.active{background:rgba(201,162,39,.25);border-color:var(--gold);color:var(--gold-bright);}
+
+.tasbih-card{background:linear-gradient(160deg,var(--bg-card),var(--bg-mid));border:1px solid rgba(201,162,39,.35);border-radius:24px;padding:50px 30px;text-align:center;box-shadow:0 30px 70px rgba(0,0,0,.6),inset 0 0 60px rgba(201,162,39,.05);}
+
+.dhikr-text{font-family:'Scheherazade New',serif;font-size:clamp(28px,5vw,42px);color:var(--gold-light);margin-bottom:12px;line-height:1.5;min-height:60px;}
+.dhikr-fadl{font-size:15px;color:var(--muted);margin-bottom:30px;line-height:1.7;min-height:44px;padding:0 10px;}
+
+.count-wrap{position:relative;width:220px;height:220px;margin:0 auto 30px;display:flex;align-items:center;justify-content:center;}
+.count-ring{position:absolute;inset:0;border-radius:50%;background:conic-gradient(var(--gold) 0%, rgba(201,162,39,.15) 0%);transition:background .3s;}
+.count-inner{position:relative;width:190px;height:190px;border-radius:50%;background:var(--bg-dark);display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(201,162,39,.3);}
+.count-num{font-family:'Aref Ruqaa',serif;font-size:72px;color:var(--gold-bright);line-height:1;text-shadow:0 0 40px rgba(201,162,39,.5);transition:transform .15s;}
+.count-num.bump{transform:scale(1.15);}
+.count-target{font-family:'Reem Kufi',sans-serif;font-size:14px;color:var(--muted);margin-top:6px;}
+
+.tasbih-btn{width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#f0d97a 0%,#c9a227 55%,#7a5d0e 100%);border:none;cursor:pointer;font-family:'Reem Kufi',sans-serif;font-size:23px;font-weight:700;color:var(--bg-dark);box-shadow:0 14px 40px rgba(0,0,0,.6),inset 0 -8px 18px rgba(0,0,0,.25),inset 0 8px 18px rgba(255,255,255,.3);transition:transform .15s;margin-bottom:20px;}
+.tasbih-btn:active{transform:scale(.92);}
+
+.btn-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:10px;}
+.btn-row button{background:transparent;color:var(--muted);border:1px solid var(--muted);padding:9px 22px;border-radius:8px;cursor:pointer;font-family:'Amiri',serif;font-size:15px;transition:all .3s;}
+.btn-row button:hover{color:var(--ivory);border-color:var(--ivory);}
+
+.congrats{display:none;margin-top:20px;padding:14px 20px;background:rgba(201,162,39,.15);border:1px solid var(--gold);border-radius:12px;color:var(--gold-light);font-family:'Reem Kufi',sans-serif;font-size:16px;text-align:center;animation:fadeIn .5s;}
+.congrats.show{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-10px);}to{opacity:1;transform:translateY(0);}}
+
+footer{text-align:center;padding:80px 20px 50px;border-top:1px solid rgba(201,162,39,.2);margin-top:60px;background:linear-gradient(180deg,transparent,rgba(18,33,26,.6));}
+footer .dua{font-family:'Scheherazade New',serif;font-size:22px;color:var(--gold-light);margin-bottom:22px;}
+footer .links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:26px;font-size:15px;}
+footer .links a{color:var(--muted);text-decoration:none;transition:color .3s;}
+footer .links a:hover{color:var(--gold);}
+footer .copy{color:var(--muted);font-size:14px;}
+
+@media(max-width:600px){
+  .topbar{padding:12px;}.topbar .brand{font-size:17px;}.topbar nav a{font-size:12px;padding:6px 9px;}
+  .page-header{padding:60px 16px 40px;}
+  .tasbih-card{padding:36px 20px;}
+  .count-wrap{width:180px;height:180px;}
+  .count-inner{width:155px;height:155px;}
+  .count-num{font-size:58px;}
+  .tasbih-btn{width:140px;height:140px;font-size:20px;}
+  .dhikr-picker button{font-size:13px;padding:7px 13px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">أسماء مختار الحداد</div>
+  <nav>
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html" class="active">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </nav>
+</div>
+
+<header class="page-header">
+  <h1>السبحة الإلكترونية</h1>
+  <p>سبّح وأهدِ الثواب لروح المتوفاة</p>
+</header>
+
+<main>
+
+<div class="dhikr-picker" id="dhikrPicker"></div>
+
+<div class="target-picker" id="targetPicker">
+  <button data-target="33">33</button>
+  <button data-target="99">99</button>
+  <button data-target="100" class="active">100</button>
+</div>
+
+<div class="tasbih-card">
+  <div class="dhikr-text" id="dhikrText">سبحان الله</div>
+  <div class="dhikr-fadl" id="dhikrFadl"></div>
+
+  <div class="count-wrap">
+    <div class="count-ring" id="countRing"></div>
+    <div class="count-inner">
+      <div class="count-num" id="countNum">0</div>
+      <div class="count-target" id="countTarget">من 100</div>
+    </div>
+  </div>
+
+  <button class="tasbih-btn" id="tasbihBtn">سبّح</button>
+
+  <div class="btn-row">
+    <button id="resetBtn">تصفير الذكر</button>
+  </div>
+
+  <div class="congrats" id="congrats">ما شاء الله! أتممت الهدف ✦</div>
+</div>
+
+</main>
+
+<footer>
+  <p class="dua">اللهم اجعل هذا التسبيح صدقة جارية على روحها، واجمعنا بها في جنات النعيم</p>
+  <div class="links">
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </div>
+  <p class="copy">© 2026 — على روح أسماء مختار الحداد</p>
+</footer>
+
+<script>
+const adhkar = [
+  {text:"سبحان الله", fadl:"من قالها مئة مرة حُطت خطاياه وإن كانت مثل زبد البحر — رواه مسلم"},
+  {text:"الحمد لله", fadl:"الحمد لله تملأ الميزان، وهي أفضل الدعاء — رواه مسلم"},
+  {text:"الله أكبر", fadl:"الله أكبر تملأ ما بين السماء والأرض — رواه مسلم"},
+  {text:"لا إله إلا الله", fadl:"أفضل الذكر، ومن قالها مخلصاً دخل الجنة — رواه الترمذي"},
+  {text:"أستغفر الله", fadl:"من لزم الاستغفار جعل الله له من كل ضيق مخرجاً — رواه أبو داود"},
+  {text:"سبحان الله وبحمده", fadl:"من قالها مئة مرة غُفرت ذنوبه وإن كانت مثل زبد البحر — رواه البخاري ومسلم"},
+  {text:"لا حول ولا قوة إلا بالله", fadl:"كنز من كنوز الجنة — رواه البخاري ومسلم"},
+  {text:"اللهم صل على محمد", fadl:"من صلى عليّ صلاة صلى الله عليه بها عشراً — رواه مسلم"},
+  {text:"لا إله إلا أنت سبحانك إني كنت من الظالمين", fadl:"دعاء يونس، ما دعا بها مريض إلا شُفي — رواه الترمذي"},
+  {text:"حسبي الله ونعم الوكيل", fadl:"قالها إبراهيم حين ألقي في النار فكانت برداً وسلاماً"},
+  {text:"اللهم اغفر لها وارحمها", fadl:"دعاء للمتوفاة — رواه مسلم"},
+  {text:"ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار", fadl:"دعاء جامع من القرآن — سورة البقرة: 201"}
+];
+
+const picker = document.getElementById('dhikrPicker');
+const dhikrText = document.getElementById('dhikrText');
+const dhikrFadl = document.getElementById('dhikrFadl');
+const countNum = document.getElementById('countNum');
+const countRing = document.getElementById('countRing');
+const countTarget = document.getElementById('countTarget');
+const tasbihBtn = document.getElementById('tasbihBtn');
+const resetBtn = document.getElementById('resetBtn');
+const congrats = document.getElementById('congrats');
+const targetBtns = document.querySelectorAll('#targetPicker button');
+
+let currentIdx = parseInt(localStorage.getItem('tasbihIdx') || '0');
+let target = parseInt(localStorage.getItem('tasbihTarget') || '100');
+let counts = JSON.parse(localStorage.getItem('tasbihCounts') || '{}');
+
+adhkar.forEach((d, i) => {
+  const btn = document.createElement('button');
+  btn.textContent = d.text.length > 22 ? d.text.slice(0, 22) + '…' : d.text;
+  btn.dataset.idx = i;
+  if(i === currentIdx) btn.classList.add('active');
+  btn.addEventListener('click', () => switchDhikr(i));
+  picker.appendChild(btn);
+});
+
+targetBtns.forEach(b => {
+  if(parseInt(b.dataset.target) === target) b.classList.add('active');
+  else b.classList.remove('active');
+});
+
+function switchDhikr(i){
+  currentIdx = i;
+  localStorage.setItem('tasbihIdx', i);
+  document.querySelectorAll('#dhikrPicker button').forEach(b => b.classList.remove('active'));
+  document.querySelector(`#dhikrPicker button[data-idx="${i}"]`).classList.add('active');
+  dhikrText.textContent = adhkar[i].text;
+  dhikrFadl.textContent = adhkar[i].fadl;
+  updateUI();
+}
+
+function updateUI(){
+  const key = adhkar[currentIdx].text;
+  const c = counts[key] || 0;
+  countNum.textContent = c;
+  countTarget.textContent = `من ${target}`;
+  const pct = Math.min((c / target) * 100, 100);
+  countRing.style.background = `conic-gradient(var(--gold) ${pct}%, rgba(201,162,39,.15) ${pct}%)`;
+  if(c >= target){
+    congrats.classList.add('show');
+  } else {
+    congrats.classList.remove('show');
+  }
+}
+
+targetBtns.forEach(b => {
+  b.addEventListener('click', () => {
+    target = parseInt(b.dataset.target);
+    localStorage.setItem('tasbihTarget', target);
+    targetBtns.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    updateUI();
+  });
+});
+
+tasbihBtn.addEventListener('click', () => {
+  const key = adhkar[currentIdx].text;
+  counts[key] = (counts[key] || 0) + 1;
+  localStorage.setItem('tasbihCounts', JSON.stringify(counts));
+  countNum.classList.add('bump');
+  setTimeout(() => countNum.classList.remove('bump'), 150);
+  updateUI();
+  if(navigator.vibrate) navigator.vibrate(15);
+});
+
+resetBtn.addEventListener('click', () => {
+  const key = adhkar[currentIdx].text;
+  counts[key] = 0;
+  localStorage.setItem('tasbihCounts', JSON.stringify(counts));
+  updateUI();
+});
+
+dhikrText.textContent = adhkar[currentIdx].text;
+dhikrFadl.textContent = adhkar[currentIdx].fadl;
+updateUI();
+</script>
+
+</body>
+</html>

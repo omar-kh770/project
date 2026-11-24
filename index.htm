@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صدقة جارية على روح أسماء مختار الحداد</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-dark:#0a1410;--bg-mid:#12211a;--bg-card:#1a2b22;
+  --gold:#c9a227;--gold-light:#e8d9a0;--gold-bright:#f0d97a;
+  --ivory:#f5f0e6;--muted:#8a9a8f;--shadow:0 20px 60px rgba(0,0,0,.6);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--ivory);font-family:'Amiri',serif;direction:rtl;line-height:1.9;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 10%,rgba(201,162,39,.10) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(201,162,39,.08) 0%,transparent 45%),radial-gradient(circle at 50% 50%,rgba(26,43,34,.6) 0%,transparent 65%);animation:pulseBg 14s ease-in-out infinite;}
+@keyframes pulseBg{0%,100%{opacity:.8;}50%{opacity:1;}}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(1px 1px at 20% 30%,rgba(232,217,160,.5),transparent),radial-gradient(1px 1px at 60% 70%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 80% 20%,rgba(232,217,160,.3),transparent),radial-gradient(1px 1px at 40% 90%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 90% 60%,rgba(232,217,160,.3),transparent),radial-gradient(1px 1px at 10% 70%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 70% 40%,rgba(232,217,160,.3),transparent);background-size:100% 100%;animation:twinkle 8s ease-in-out infinite alternate;}
+@keyframes twinkle{0%{opacity:.4;}100%{opacity:1;}}
+
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(10,20,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,162,39,.25);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.topbar .brand{font-family:'Reem Kufi',sans-serif;font-size:22px;color:var(--gold-light);font-weight:700;display:flex;align-items:center;gap:10px;}
+.topbar .brand::before{content:'☪';font-size:28px;color:var(--gold);}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap;}
+.topbar nav a{color:var(--ivory);text-decoration:none;padding:7px 14px;border:1px solid rgba(201,162,39,.3);border-radius:8px;font-size:15px;transition:all .3s;}
+.topbar nav a:hover,.topbar nav a.active{background:rgba(201,162,39,.2);border-color:var(--gold);color:var(--gold-bright);}
+
+.hero{position:relative;text-align:center;padding:120px 20px 100px;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at top,rgba(201,162,39,.18) 0%,transparent 60%),linear-gradient(180deg,var(--bg-mid) 0%,var(--bg-dark) 100%);}
+.hero .ornament{font-size:70px;color:var(--gold);opacity:.7;margin-bottom:24px;animation:float 5s ease-in-out infinite;text-shadow:0 0 50px rgba(201,162,39,.7);}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-16px) rotate(10deg);}}
+.hero h1{font-family:'Aref Ruqaa',serif;font-size:clamp(42px,7.5vw,92px);color:var(--gold-light);margin-bottom:20px;letter-spacing:3px;text-shadow:0 0 70px rgba(201,162,39,.6),0 4px 20px rgba(0,0,0,.8);line-height:1.2;}
+.hero .subtitle{font-family:'Reem Kufi',sans-serif;font-size:clamp(19px,3vw,28px);color:var(--gold);margin-bottom:46px;letter-spacing:2px;}
+.hero .hero-dua{max-width:850px;margin:0 auto;font-family:'Scheherazade New',serif;font-size:clamp(22px,3.2vw,30px);color:var(--ivory);line-height:2.4;padding:40px 30px;border-top:1px solid rgba(201,162,39,.35);border-bottom:1px solid rgba(201,162,39,.35);background:rgba(26,43,34,.5);border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.5),inset 0 0 60px rgba(201,162,39,.05);}
+.hero .hero-dua .ameen{display:block;margin-top:20px;font-family:'Amiri',serif;font-size:19px;color:var(--gold);letter-spacing:2px;}
+.hero .scroll-hint{margin-top:60px;color:var(--muted);font-size:14px;animation:bounce 2s infinite;letter-spacing:2px;}
+@keyframes bounce{0%,100%{transform:translateY(0);}50%{transform:translateY(10px);}}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;max-width:1100px;margin:0 auto;padding:60px 24px;}
+.stat-card{background:linear-gradient(135deg,var(--bg-card) 0%,var(--bg-mid) 100%);border:1px solid rgba(201,162,39,.3);border-radius:18px;padding:34px 18px;text-align:center;transition:all .4s;position:relative;overflow:hidden;}
+.stat-card::before{content:'';position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s;}
+.stat-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:var(--shadow);}
+.stat-card:hover::before{opacity:1;}
+.stat-card .num{font-family:'Aref Ruqaa',serif;font-size:54px;color:var(--gold-bright);font-weight:700;display:block;text-shadow:0 0 25px rgba(201,162,39,.5);}
+.stat-card .lbl{font-size:16px;color:var(--muted);margin-top:8px;}
+
+.section-title{text-align:center;font-family:'Reem Kufi',sans-serif;font-size:clamp(30px,4.8vw,46px);color:var(--gold-light);margin:90px 0 16px;position:relative;padding-bottom:22px;letter-spacing:1px;}
+.section-title::after{content:'';position:absolute;bottom:0;right:50%;transform:translateX(50%);width:110px;height:2px;background:var(--gold);box-shadow:0 0 18px var(--gold);}
+.section-title::before{content:'❁';position:absolute;bottom:-14px;right:50%;transform:translateX(50%);background:var(--bg-dark);padding:0 14px;color:var(--gold);font-size:22px;}
+.section-sub{text-align:center;color:var(--muted);font-size:19px;margin-bottom:48px;}
+
+.sections-grid{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;}
+.big-card{position:relative;background:linear-gradient(160deg,var(--bg-card) 0%,#0f1a14 100%);border:1px solid rgba(201,162,39,.3);border-radius:22px;padding:46px 30px;text-align:center;text-decoration:none;color:var(--ivory);overflow:hidden;transition:all .45s cubic-bezier(.2,.8,.2,1);}
+.big-card::before{content:'';position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s;}
+.big-card::after{content:'';position:absolute;inset:0;border-radius:22px;background:radial-gradient(circle at 50% 0%,rgba(201,162,39,.15) 0%,transparent 70%);opacity:0;transition:opacity .4s;pointer-events:none;}
+.big-card:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 30px 70px rgba(0,0,0,.7),0 0 50px rgba(201,162,39,.2);}
+.big-card:hover::before,.big-card:hover::after{opacity:1;}
+.big-card .icon{font-size:62px;color:var(--gold);margin-bottom:22px;display:block;transition:transform .5s;text-shadow:0 0 35px rgba(201,162,39,.5);}
+.big-card:hover .icon{transform:scale(1.2) rotate(-8deg);}
+.big-card h3{font-family:'Reem Kufi',sans-serif;font-size:28px;color:var(--gold-light);margin-bottom:14px;}
+.big-card p{font-size:16px;color:var(--muted);line-height:1.9;}
+.big-card .arrow{display:inline-block;margin-top:20px;font-size:14px;color:var(--gold);opacity:0;transform:translateX(-12px);transition:all .4s;}
+.big-card:hover .arrow{opacity:1;transform:translateX(0);}
+
+.verse-hero{max-width:1000px;margin:90px auto;padding:0 24px;}
+.verse-hero .box{text-align:center;padding:80px 34px;background:linear-gradient(135deg,rgba(201,162,39,.10) 0%,rgba(26,43,34,.7) 100%);border-radius:26px;border:1px solid rgba(201,162,39,.4);position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6),inset 0 0 80px rgba(201,162,39,.08);}
+.verse-hero .box::before,.verse-hero .box::after{content:'۞';position:absolute;font-size:180px;color:rgba(201,162,39,.07);}
+.verse-hero .box::before{top:-60px;right:-40px;}
+.verse-hero .box::after{bottom:-70px;left:-40px;transform:rotate(180deg);}
+.verse-hero .label{font-family:'Reem Kufi',sans-serif;color:var(--gold);font-size:16px;letter-spacing:6px;margin-bottom:34px;position:relative;z-index:1;}
+.verse-hero .verse{font-family:'Scheherazade New',serif;font-size:clamp(28px,4.8vw,46px);color:var(--gold-light);line-height:2.3;margin-bottom:24px;position:relative;z-index:1;text-shadow:0 0 30px rgba(201,162,39,.3);transition:opacity .5s;}
+.verse-hero .source{font-size:18px;color:var(--muted);position:relative;z-index:1;}
+.verse-refresh{display:inline-block;margin-top:26px;background:transparent;color:var(--gold);border:1px solid rgba(201,162,39,.5);padding:10px 26px;border-radius:8px;cursor:pointer;font-family:'Reem Kufi',sans-serif;font-size:15px;transition:all .3s;position:relative;z-index:1;}
+.verse-refresh:hover{background:rgba(201,162,39,.15);border-color:var(--gold-bright);}
+
+.quotes{max-width:900px;margin:60px auto;padding:0 24px;text-align:center;}
+.quote-box{background:var(--bg-card);border-right:5px solid var(--gold);border-radius:16px;padding:40px 32px;margin-bottom:20px;transition:all .4s;box-shadow:0 10px 30px rgba(0,0,0,.3);}
+.quote-box:hover{transform:translateX(-8px);border-right-color:var(--gold-bright);box-shadow:0 15px 40px rgba(0,0,0,.5);}
+.quote-box p{font-family:'Scheherazade New',serif;font-size:24px;line-height:2.1;color:var(--ivory);margin-bottom:16px;}
+.quote-box .src{font-size:15px;color:var(--muted);}
+
+.closing{max-width:900px;margin:100px auto 40px;padding:0 24px;text-align:center;}
+.closing .frame{padding:70px 36px;border:1px solid rgba(201,162,39,.4);border-radius:24px;background:rgba(26,43,34,.5);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+.closing .frame::before{content:'❁';position:absolute;top:-22px;right:50%;transform:translateX(50%);background:var(--bg-dark);padding:0 22px;color:var(--gold);font-size:30px;}
+.closing p{font-family:'Scheherazade New',serif;font-size:clamp(22px,3.4vw,30px);line-height:2.3;color:var(--gold-light);}
+
+footer{text-align:center;padding:80px 20px 50px;border-top:1px solid rgba(201,162,39,.2);margin-top:80px;background:linear-gradient(180deg,transparent,rgba(18,33,26,.6));}
+footer .dua{font-family:'Scheherazade New',serif;font-size:22px;color:var(--gold-light);margin-bottom:22px;}
+footer .links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:28px;font-size:15px;}
+footer .links a{color:var(--muted);text-decoration:none;transition:color .3s;}
+footer .links a:hover{color:var(--gold);}
+footer .copy{color:var(--muted);font-size:14px;}
+
+@media(max-width:600px){
+  .topbar{padding:12px;}.topbar .brand{font-size:17px;}.topbar nav a{font-size:12px;padding:6px 9px;}
+  .hero{padding:70px 16px 60px;}.hero .ornament{font-size:48px;}
+  .big-card{padding:34px 20px;}.big-card .icon{font-size:48px;}.big-card h3{font-size:24px;}
+  .quote-box p{font-size:20px;}.verse-hero .box{padding:50px 20px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">أسماء مختار الحداد</div>
+  <nav>
+    <a href="index.html" class="active">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </nav>
+</div>
+
+<section class="hero">
+  <div class="ornament">۞</div>
+  <h1>أسماء مختار الحداد</h1>
+  <p class="subtitle">صدقة جارية على روحها الطاهرة</p>
+  <div class="hero-dua">
+    اللهم اغفر لها وارحمها، وعافها واعف عنها،<br>
+    وأكرم نزلها، ووسع مدخلها،<br>
+    واغسلها بالماء والثلج والبرد،<br>
+    ونقها من الخطايا كما ينقى الثوب الأبيض من الدنس.
+    <span class="ameen">اللهم آمين</span>
+  </div>
+  <div class="scroll-hint">▼ تفضل بالدخول ▼</div>
+</section>
+
+<section class="stats">
+  <div class="stat-card"><span class="num">150</span><span class="lbl">دعاء للمتوفاة</span></div>
+  <div class="stat-card"><span class="num">60</span><span class="lbl">آية قرآنية</span></div>
+  <div class="stat-card"><span class="num">12</span><span class="lbl">ذكر للتسبيح</span></div>
+  <div class="stat-card"><span class="num">30</span><span class="lbl">فكرة صدقة جارية</span></div>
+</section>
+
+<h2 class="section-title">أقسام الموقع</h2>
+<p class="section-sub">اختر ما تريد واقرأ ما تيسر — كل عمل يُهدى ثوابه لروحها</p>
+
+<section class="sections-grid">
+  <a href="duas.html" class="big-card">
+    <span class="icon">﷽</span>
+    <h3>الأدعية</h3>
+    <p>150 دعاءً مأثوراً للمتوفاة<br>من الكتاب والسنة</p>
+    <span class="arrow">← اقرأ الأدعية</span>
+  </a>
+  <a href="quran.html" class="big-card">
+    <span class="icon">☪</span>
+    <h3>الآيات القرآنية</h3>
+    <p>60 آية قرآنية للمتوفاة<br>مغفرة ورحمة وجنة</p>
+    <span class="arrow">← اقرأ الآيات</span>
+  </a>
+  <a href="tasbih.html" class="big-card">
+    <span class="icon">۞</span>
+    <h3>السبحة الإلكترونية</h3>
+    <p>سبحة تفاعلية كاملة<br>12 ذكراً مع عدادات محفوظة</p>
+    <span class="arrow">← ابدأ التسبيح</span>
+  </a>
+  <a href="fadl.html" class="big-card">
+    <span class="icon">🤲</span>
+    <h3>فضل الدعاء</h3>
+    <p>فضل الدعاء للميت<br>وأوقات وأسباب الاستجابة</p>
+    <span class="arrow">← اقرأ الفضل</span>
+  </a>
+  <a href="sadaqa.html" class="big-card">
+    <span class="icon">❁</span>
+    <h3>الصدقة الجارية</h3>
+    <p>30 فكرة صدقة جارية<br>وفضل الصدقة عن الميت</p>
+    <span class="arrow">← اقرأ الأفكار</span>
+  </a>
+</section>
+
+<section class="verse-hero">
+  <div class="box">
+    <div class="label">آية اليوم</div>
+    <p class="verse" id="dailyVerse">﴿ إِنَّ مَعَ الْعُسْرِ يُسْرًا ﴾</p>
+    <p class="source" id="dailySource">سورة الشرح — الآية 6</p>
+    <button class="verse-refresh" onclick="newVerse()">آية أخرى ✦</button>
+  </div>
+</section>
+
+<h2 class="section-title">من هدي النبي ﷺ</h2>
+<p class="section-sub">أحاديث في فضل الدعاء للميت</p>
+
+<section class="quotes">
+  <div class="quote-box">
+    <p>«إذا مات ابن آدم انقطع عمله إلا من ثلاث: صدقة جارية، أو علم ينتفع به، أو ولد صالح يدعو له»</p>
+    <p class="src">رواه مسلم</p>
+  </div>
+  <div class="quote-box">
+    <p>«ما من مسلم يدعو لأخيه بظهر الغيب إلا قال الملك: ولك بمثل»</p>
+    <p class="src">رواه مسلم</p>
+  </div>
+  <div class="quote-box">
+    <p>«الدعاء مخ العبادة»</p>
+    <p class="src">رواه الترمذي</p>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="frame">
+    <p>
+      اللهم اجعل هذا العمل صدقة جارية على روحها،<br>
+      واجمعنا بها في جنات النعيم،<br>
+      مع النبيين والصديقين والشهداء والصالحين،<br>
+      وحسن أولئك رفيقاً.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p class="dua">اللهم اجعل هذا العمل صدقة جارية على روحها، واجمعنا بها في جنات النعيم</p>
+  <div class="links">
+    <a href="index.html">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </div>
+  <p class="copy">© 2026 — على روح أسماء مختار الحداد</p>
+</footer>
+
+<script>
+const verses = [
+  {v:"﴿ إِنَّ مَعَ الْعُسْرِ يُسْرًا ﴾", s:"سورة الشرح — الآية 6"},
+  {v:"﴿ فَاذْكُرُونِي أَذْكُرْكُمْ ﴾", s:"سورة البقرة — الآية 152"},
+  {v:"﴿ وَمَا تَوْفِيقِي إِلَّا بِاللَّهِ ﴾", s:"سورة هود — الآية 88"},
+  {v:"﴿ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ ﴾", s:"سورة البقرة — الآية 153"},
+  {v:"﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾", s:"سورة طه — الآية 114"},
+  {v:"﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾", s:"سورة الرعد — الآية 28"},
+  {v:"﴿ وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ﴾", s:"سورة الطلاق — الآية 3"},
+  {v:"﴿ إِنَّ اللَّهَ غَفُورٌ رَّحِيمٌ ﴾", s:"سورة البقرة — الآية 173"},
+  {v:"﴿ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً ﴾", s:"سورة البقرة — الآية 201"},
+  {v:"﴿ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ﴾", s:"سورة الحديد — الآية 4"}
+];
+let verseIdx = Math.floor(Math.random() * verses.length);
+const dailyVerse = document.getElementById('dailyVerse');
+const dailySource = document.getElementById('dailySource');
+function showVerse(i){
+  dailyVerse.style.opacity = 0;
+  setTimeout(() => {
+    dailyVerse.textContent = verses[i].v;
+    dailySource.textContent = verses[i].s;
+    dailyVerse.style.opacity = 1;
+  }, 300);
+}
+function newVerse(){
+  verseIdx = (verseIdx + 1) % verses.length;
+  showVerse(verseIdx);
+}
+showVerse(verseIdx);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أدعية للمتوفاة — أسماء مختار الحداد</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-dark:#0a1410;--bg-mid:#12211a;--bg-card:#1a2b22;--gold:#c9a227;--gold-light:#e8d9a0;--gold-bright:#f0d97a;--ivory:#f5f0e6;--muted:#8a9a8f;--shadow:0 20px 60px rgba(0,0,0,.6);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--ivory);font-family:'Amiri',serif;direction:rtl;line-height:1.9;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 10%,rgba(201,162,39,.10) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(201,162,39,.08) 0%,transparent 45%),radial-gradient(circle at 50% 50%,rgba(26,43,34,.6) 0%,transparent 65%);animation:pulseBg 14s ease-in-out infinite;}
+@keyframes pulseBg{0%,100%{opacity:.8;}50%{opacity:1;}}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(1px 1px at 20% 30%,rgba(232,217,160,.5),transparent),radial-gradient(1px 1px at 60% 70%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 80% 20%,rgba(232,217,160,.3),transparent),radial-gradient(1px 1px at 40% 90%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 90% 60%,rgba(232,217,160,.3),transparent);background-size:100% 100%;animation:twinkle 8s ease-in-out infinite alternate;}
+@keyframes twinkle{0%{opacity:.4;}100%{opacity:1;}}
+
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(10,20,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,162,39,.25);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.topbar .brand{font-family:'Reem Kufi',sans-serif;font-size:22px;color:var(--gold-light);font-weight:700;display:flex;align-items:center;gap:10px;}
+.topbar .brand::before{content:'☪';font-size:28px;color:var(--gold);}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap;}
+.topbar nav a{color:var(--ivory);text-decoration:none;padding:7px 14px;border:1px solid rgba(201,162,39,.3);border-radius:8px;font-size:15px;transition:all .3s;}
+.topbar nav a:hover,.topbar nav a.active{background:rgba(201,162,39,.2);border-color:var(--gold);color:var(--gold-bright);}
+
+.page-header{text-align:center;padding:90px 20px 60px;background:linear-gradient(180deg,var(--bg-mid) 0%,var(--bg-dark) 100%);border-bottom:1px solid rgba(201,162,39,.2);position:relative;overflow:hidden;}
+.page-header::before{content:'﷽';position:absolute;top:40px;right:50%;transform:translateX(50%);font-size:70px;color:rgba(201,162,39,.12);}
+.page-header h1{font-family:'Aref Ruqaa',serif;font-size:clamp(40px,6.5vw,76px);color:var(--gold-light);margin-bottom:18px;text-shadow:0 0 60px rgba(201,162,39,.5);letter-spacing:2px;position:relative;}
+.page-header p{color:var(--gold);font-size:clamp(17px,2.5vw,22px);font-family:'Reem Kufi',sans-serif;position:relative;letter-spacing:1px;}
+
+main{max-width:1050px;margin:0 auto;padding:60px 24px 90px;}
+
+.dua-item{background:linear-gradient(160deg,var(--bg-card),#0f1a14);border:1px solid rgba(201,162,39,.22);border-radius:16px;padding:36px 32px;margin-bottom:22px;transition:all .4s;position:relative;overflow:hidden;}
+.dua-item::before{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:var(--gold);opacity:0;transition:opacity .4s;}
+.dua-item:hover{border-color:var(--gold);transform:translateX(-6px);box-shadow:0 15px 40px rgba(0,0,0,.5);}
+.dua-item:hover::before{opacity:1;}
+.dua-item .num{display:inline-block;font-family:'Reem Kufi',sans-serif;font-size:16px;color:var(--gold);margin-bottom:12px;letter-spacing:1px;}
+.dua-item .arabic{font-family:'Scheherazade New',serif;font-size:clamp(22px,2.9vw,28px);line-height:2.2;color:var(--ivory);}
+
+footer{text-align:center;padding:80px 20px 50px;border-top:1px solid rgba(201,162,39,.2);margin-top:60px;background:linear-gradient(180deg,transparent,rgba(18,33,26,.6));}
+footer .dua{font-family:'Scheherazade New',serif;font-size:22px;color:var(--gold-light);margin-bottom:22px;}
+footer .links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:26px;font-size:15px;}
+footer .links a{color:var(--muted);text-decoration:none;transition:color .3s;}
+footer .links a:hover{color:var(--gold);}
+footer .copy{color:var(--muted);font-size:14px;}
+
+@media(max-width:600px){
+  .topbar{padding:12px;}.topbar .brand{font-size:17px;}.topbar nav a{font-size:12px;padding:6px 9px;}
+  .dua-item{padding:26px 20px;}.page-header{padding:60px 16px 40px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">أسماء مختار الحداد</div>
+  <nav>
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html" class="active">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </nav>
+</div>
+
+<header class="page-header">
+  <h1>أدعية للمتوفاة</h1>
+  <p>أدعية مأثورة تُهدى ثوابها لروح أسماء مختار الحداد</p>
+</header>
+
+<main>
+
+<div class="dua-item"><span class="num">1</span><p class="arabic">اللهم اغفر لها وارحمها، وعافها واعفُ عنها، وأكرم نزلها، ووسع مدخلها، واغسلها بالماء والثلج والبرد، ونقِّها من الخطايا كما يُنقّى الثوب الأبيض من الدنس.</p></div>
+
+<div class="dua-item"><span class="num">2</span><p class="arabic">اللهم أبدلها داراً خيراً من دارها، وأهلاً خيراً من أهلها، وزوجاً خيراً من زوجها، وأدخلها الجنة، وأعذها من عذاب القبر ومن عذاب النار.</p></div>
+
+<div class="dua-item"><span class="num">3</span><p class="arabic">اللهم إن فلانة بنت فلان في ذمتك وحبل جوارك، فقِها من فتنة القبر وعذاب النار، وأنت أهل الوفاء والحق، فاغفر لها وارحمها إنك أنت الغفور الرحيم.</p></div>
+
+<div class="dua-item"><span class="num">4</span><p class="arabic">اللهم عبدتك وابنة عبدك وابنة أمتك، احتاجت إلى رحمتك، وأنت غني عن عذابها، إن كانت محسنة فزد في حسناتها، وإن كانت مسيئة فتجاوز عنها.</p></div>
+
+<div class="dua-item"><span class="num">5</span><p class="arabic">اللهم اغفر لحينا وميتنا، وشاهدنا وغائبنا، وصغيرنا وكبيرنا، وذكرنا وأنثانا.</p></div>
+
+<div class="dua-item"><span class="num">6</span><p class="arabic">اللهم من أحييته منا فأحيه على الإسلام، ومن توفيته منا فتوفه على الإيمان.</p></div>
+
+<div class="dua-item"><span class="num">7</span><p class="arabic">اللهم لا تحرمنا أجرها، ولا تفتنا بعدها، واغفر لنا ولها.</p></div>
+
+<div class="dua-item"><span class="num">8</span><p class="arabic">اللهم اجعل قبرها روضة من رياض الجنة، ولا تجعله حفرة من حفر النار.</p></div>
+
+<div class="dua-item"><span class="num">9</span><p class="arabic">اللهم ثبتها عند السؤال، وثبتها بالقول الثابت في الحياة الدنيا وفي الآخرة.</p></div>
+
+<div class="dua-item"><span class="num">10</span><p class="arabic">اللهم إنها نزلت بك وأنت خير منزول به، وأصبحت فقيرة إلى رحمتك وأنت غني عن عذابها.</p></div>
+
+<div class="dua-item"><span class="num">11</span><p class="arabic">اللهم آتها برحمتك ورضاك، وقِها فتنة القبر وعذابه.</p></div>
+
+<div class="dua-item"><span class="num">12</span><p class="arabic">اللهم آتها برحمتك الأمن من عذابك حتى تبعثها إلى جنتك يا أرحم الراحمين.</p></div>
+
+<div class="dua-item"><span class="num">13</span><p class="arabic">اللهم انقلها من مواطن الدود وضيق اللحود إلى جنات الخلود.</p></div>
+
+<div class="dua-item"><span class="num">14</span><p class="arabic">اللهم ارحمها تحت الأرض، واسترها يوم العرض، ولا تخزها يوم يبعثون.</p></div>
+
+<div class="dua-item"><span class="num">15</span><p class="arabic">اللهم يمّن كتابها، ويسّر حسابها، وثقّل بالحسنات ميزانها، وثبّت على الصراط أقدامها.</p></div>
+
+<div class="dua-item"><span class="num">16</span><p class="arabic">اللهم افسح لها في قبرها مد بصرها، وافرش قبرها من فراش الجنة.</p></div>
+
+<div class="dua-item"><span class="num">17</span><p class="arabic">اللهم آنس وحدتها، وآنسها في وحشتها، وآنسها في غربتها.</p></div>
+
+<div class="dua-item"><span class="num">18</span><p class="arabic">اللهم أنزلها منزلاً مباركاً وأنت خير المنزلين.</p></div>
+
+<div class="dua-item"><span class="num">19</span><p class="arabic">اللهم أنزلها منازل الصديقين والشهداء والصالحين، وحسن أولئك رفيقاً.</p></div>
+
+<div class="dua-item"><span class="num">20</span><p class="arabic">اللهم املأ قبرها بالرضا والنور والفسحة والسرور.</p></div>
+
+<div class="dua-item"><span class="num">21</span><p class="arabic">اللهم افتح لها في قبرها باباً تهب منه نسائم الجنة لا يُسد أبداً.</p></div>
+
+<div class="dua-item"><span class="num">22</span><p class="arabic">اللهم اجعل قبرها نوراً وضياءً، واجعله خير منزل نزلت فيه.</p></div>
+
+<div class="dua-item"><span class="num">23</span><p class="arabic">اللهم اجعل عن يمينها نوراً، وعن شمالها نوراً، ومن أمامها نوراً، ومن فوقها نوراً، حتى تبعثها آمنة مطمئنة في نور من نورك.</p></div>
+
+<div class="dua-item"><span class="num">24</span><p class="arabic">اللهم طيّب ثراها، وأكرم مثواها، واجعل الجنة مستقرها ومأواها.</p></div>
+
+<div class="dua-item"><span class="num">25</span><p class="arabic">اللهم اجعل القرآن الكريم أنيسها في قبرها، وشفيعاً لها يوم القيامة.</p></div>
+
+<div class="dua-item"><span class="num">26</span><p class="arabic">اللهم اجعل صلاتها وصيامها وصدقاتها نوراً يتلألأ في قبرها.</p></div>
+
+<div class="dua-item"><span class="num">27</span><p class="arabic">اللهم ارحم غربتها في القبر، وآمن روعتها يوم الفزع الأكبر.</p></div>
+
+<div class="dua-item"><span class="num">28</span><p class="arabic">اللهم وسّع عليها قبرها، ونوّره بنور وجهك الكريم.</p></div>
+
+<div class="dua-item"><span class="num">29</span><p class="arabic">اللهم اجعل تراب القبر برداً وسلاماً على جسدها.</p></div>
+
+<div class="dua-item"><span class="num">30</span><p class="arabic">اللهم ارزقها لذة النظر إلى وجهك الكريم، والشوق إلى لقائك في غير ضراء مضرة ولا فتنة مضلة.</p></div>
+
+<div class="dua-item"><span class="num">31</span><p class="arabic">اللهم اغفر لها ما تقدم من ذنبها وما تأخر، وما أسرّت وما أعلنت.</p></div>
+
+<div class="dua-item"><span class="num">32</span><p class="arabic">اللهم تجاوز عن سيئاتها، وضاعف حسناتها، وارفع درجاتها في المهديين.</p></div>
+
+<div class="dua-item"><span class="num">33</span><p class="arabic">اللهم عاملها بما أنت أهله، ولا تعاملها بما هي أهله.</p></div>
+
+<div class="dua-item"><span class="num">34</span><p class="arabic">اللهم اجزها عن الإحسان إحساناً، وعن الإساءة عفواً وغفراناً.</p></div>
+
+<div class="dua-item"><span class="num">35</span><p class="arabic">اللهم إن كانت محسنة فزد في إحسانها، وإن كانت مسيئة فتجاوز عن سيئاتها.</p></div>
+
+<div class="dua-item"><span class="num">36</span><p class="arabic">اللهم أدخلها الجنة من غير مناقشة حساب ولا سابقة عذاب.</p></div>
+
+<div class="dua-item"><span class="num">37</span><p class="arabic">اللهم اجعلها من الذين سعدوا في الجنة خالدين فيها ما دامت السماوات والأرض.</p></div>
+
+<div class="dua-item"><span class="num">38</span><p class="arabic">اللهم لا نزكيها عليك، ولكنا نحسب أنها آمنت وعملت صالحاً، فاجعل لها جنتين ذواتي أفنان.</p></div>
+
+<div class="dua-item"><span class="num">39</span><p class="arabic">اللهم إنها صبرت على البلاء فلم تجزع، فامنحها درجة الصابرين الذين يوفون أجورهم بغير حساب.</p></div>
+
+<div class="dua-item"><span class="num">40</span><p class="arabic">اللهم إنها كانت تشهد أن لا إله إلا أنت وأن محمداً عبدك ورسولك، وأنت أعلم بها، فاغفر لها وارحمها.</p></div>
+
+<div class="dua-item"><span class="num">41</span><p class="arabic">اللهم يا حنان يا منان يا واسع الغفران، اغفر لها وارحمها، وعافها واعف عنها.</p></div>
+
+<div class="dua-item"><span class="num">42</span><p class="arabic">اللهم اكتبها عندك من الصالحين والصديقين والشهداء والأخيار.</p></div>
+
+<div class="dua-item"><span class="num">43</span><p class="arabic">اللهم ارزقها بكل حرف في القرآن حلاوة، وبكل كلمة كرامة، وبكل آية سعادة.</p></div>
+
+<div class="dua-item"><span class="num">44</span><p class="arabic">اللهم شفع فيها نبينا ومصطفاك، واحشرها تحت لوائه، واسقها من يده الشريفة شربة هنيئة لا تظمأ بعدها أبداً.</p></div>
+
+<div class="dua-item"><span class="num">45</span><p class="arabic">اللهم اجعلها في بطن القبر مطمئنة، وعند قيام الأشهاد آمنة، وبجود رضوانك واثقة.</p></div>
+
+<div class="dua-item"><span class="num">46</span><p class="arabic">اللهم إن رحمتك وسعت كل شيء، فارحمها رحمة تطمئن بها نفسها، وتقر بها عينها.</p></div>
+
+<div class="dua-item"><span class="num">47</span><p class="arabic">اللهم احشرها مع المتقين إلى الرحمن وفداً.</p></div>
+
+<div class="dua-item"><span class="num">48</span><p class="arabic">اللهم احشرها مع أصحاب اليمين، واجعل تحيتها سلام لك من أصحاب اليمين.</p></div>
+
+<div class="dua-item"><span class="num">49</span><p class="arabic">اللهم بشّرها بقولك: "كلوا واشربوا هنيئاً بما أسلفتم في الأيام الخالية".</p></div>
+
+<div class="dua-item"><span class="num">50</span><p class="arabic">اللهم اجعلها من الذين يُقال لهم: "ادخلوها بسلام آمنين".</p></div>
+
+<div class="dua-item"><span class="num">51</span><p class="arabic">اللهم ارحم روحاً صعدت إليك ولم يعد بيننا وبينها إلا الدعاء.</p></div>
+
+<div class="dua-item"><span class="num">52</span><p class="arabic">اللهم اجعلها في نعيم دائم غير منقطع في جنتك.</p></div>
+
+<div class="dua-item"><span class="num">53</span><p class="arabic">اللهم ارحم من غابت عن الدنيا وبقي أثرها الطيب في قلوبنا.</p></div>
+
+<div class="dua-item"><span class="num">54</span><p class="arabic">يا رب عوّضها عن كل ألم أصابها في الدنيا براحة أبدية في الجنة.</p></div>
+
+<div class="dua-item"><span class="num">55</span><p class="arabic">اللهم اجعل ابتسامتها في الجنة أجمل، ومقامها في الفردوس الأعلى.</p></div>
+
+<div class="dua-item"><span class="num">56</span><p class="arabic">اللهم برد تربة قبرها، وبلل بالرحمات ثراها.</p></div>
+
+<div class="dua-item"><span class="num">57</span><p class="arabic">اللهم اجمعنا بها في مستقر رحمتك حيث لا فراق ولا وداع.</p></div>
+
+<div class="dua-item"><span class="num">58</span><p class="arabic">اللهم اجعلها ممن يمرون على الصراط كالبرق الخاطف.</p></div>
+
+<div class="dua-item"><span class="num">59</span><p class="arabic">اللهم ارحمها بقدر شوقنا إليها، وبقدر رحمتك التي وسعت كل شيء.</p></div>
+
+<div class="dua-item"><span class="num">60</span><p class="arabic">اللهم اجعلها من الضاحكين المستبشرين بالجنة.</p></div>
+
+<div class="dua-item"><span class="num">61</span><p class="arabic">اللهم طهّرها من الذنوب والخطايا كما يُطهر الثوب الأبيض من الدنس.</p></div>
+
+<div class="dua-item"><span class="num">62</span><p class="arabic">اللهم أسكنها الفردوس الأعلى من الجنة بلا حساب ولا سابق عذاب.</p></div>
+
+<div class="dua-item"><span class="num">63</span><p class="arabic">يا رب إن كانت في ضيق فوسع عليها، وإن كانت في ظلمة فنوّر لها.</p></div>
+
+<div class="dua-item"><span class="num">64</span><p class="arabic">اللهم ارزقها شفاعة القرآن وشفاعة النبي العدنان.</p></div>
+
+<div class="dua-item"><span class="num">65</span><p class="arabic">اللهم اجعل عملها الصالح في الدنيا شفيعاً لها عند لقائك.</p></div>
+
+<div class="dua-item"><span class="num">66</span><p class="arabic">اللهم أظلها تحت عرشك يوم لا ظل إلا ظلك ولا باقي إلا وجهك.</p></div>
+
+<div class="dua-item"><span class="num">67</span><p class="arabic">اللهم بيّض وجهها يوم تبيض وجوه وتسود وجوه.</p></div>
+
+<div class="dua-item"><span class="num">68</span><p class="arabic">اللهم اجعلها في كفالة رحمتك، وفي جوار نبيك الكريم.</p></div>
+
+<div class="dua-item"><span class="num">69</span><p class="arabic">يا رب إننا نستودعك إياها، فاجعلها في أمانك وضمانك وإحسانك.</p></div>
+
+<div class="dua-item"><span class="num">70</span><p class="arabic">اللهم لا تطفئ نور قبرها، واجعله متصلاً بنور الجنة.</p></div>
+
+<div class="dua-item"><span class="num">71</span><p class="arabic">اللهم اجعل لها نصيباً من كل دعاء يُدعى به للمسلمين والمسلمات.</p></div>
+
+<div class="dua-item"><span class="num">72</span><p class="arabic">اللهم ارحم عجزها، واجبر كسر قلوبنا على فراقها.</p></div>
+
+<div class="dua-item"><span class="num">73</span><p class="arabic">اللهم اجعل آخرتها خيراً من دنياها، وما عندك خيراً وأبقى.</p></div>
+
+<div class="dua-item"><span class="num">74</span><p class="arabic">اللهم أعتق رقبتها من النار، وحرّم جسدها على النار.</p></div>
+
+<div class="dua-item"><span class="num">75</span><p class="arabic">اللهم افتح لها أبواب سمائك، وأبواب رحمتك، وأبواب جنتك الثمانية.</p></div>
+
+<div class="dua-item"><span class="num">76</span><p class="arabic">اللهم اغفر لأمي وارحمها، وعافها واعف عنها، وأكرم نزلها ووسع مدخلها.</p></div>
+
+<div class="dua-item"><span class="num">77</span><p class="arabic">اللهم اجزِ أمي عن الإحسان إحساناً، وعن تربيتها لنا وتعبهـا معنا خير الجزاء.</p></div>
+
+<div class="dua-item"><span class="num">78</span><p class="arabic">اللهم اجعل أمي سيدة من سيدات أهل الجنة، واجعل الحوض مورداً لها، والرسول شافعاً لها.</p></div>
+
+<div class="dua-item"><span class="num">79</span><p class="arabic">اللهم ارحم أمي بقدر ما سهرت وتعبت وأعطت دون مقابل.</p></div>
+
+<div class="dua-item"><span class="num">80</span><p class="arabic">اللهم اجعل قبر أمي روضة من رياض الجنة، ومدّ لها فيه مد بصرها.</p></div>
+
+<div class="dua-item"><span class="num">81</span><p class="arabic">اللهم أبدل أمي داراً خيراً من دارها، وأهلاً خيراً من أهلها، وأدخلها الفردوس الأعلى.</p></div>
+
+<div class="dua-item"><span class="num">82</span><p class="arabic">اللهم اجعل برّنا بها بعد موتها يصلها نوراً وسروراً في قبرها.</p></div>
+
+<div class="dua-item"><span class="num">83</span><p class="arabic">اللهم ارزق أمي الجنة وما قرّب إليها من قول أو عمل.</p></div>
+
+<div class="dua-item"><span class="num">84</span><p class="arabic">اللهم اجمعني بأمي في جنات النعيم على سرر متقابلين.</p></div>
+
+<div class="dua-item"><span class="num">85</span><p class="arabic">اللهم إنها كانت لنا أماناً في الدنيا، فاجعلها في أمانك التام في الآخرة.</p></div>
+
+<div class="dua-item"><span class="num">86</span><p class="arabic">اللهم لا تحرم أمي لذة النظر إلى وجهك الكريم.</p></div>
+
+<div class="dua-item"><span class="num">87</span><p class="arabic">اللهم اجعل كل ألم ذاقته أمي في مرضها كفارة لذنوبها ورفعة لدرجاتها.</p></div>
+
+<div class="dua-item"><span class="num">88</span><p class="arabic">اللهم ارحم صوتها الذي غاب، ووجهها الذي اشتقنا إليه.</p></div>
+
+<div class="dua-item"><span class="num">89</span><p class="arabic">اللهم اجعل أمي من الذين لا خوف عليهم ولا هم يحزنون.</p></div>
+
+<div class="dua-item"><span class="num">90</span><p class="arabic">اللهم تقبل منها صالح الأعمال، وتجاوز عن التقصير يا أكرم الأكرمين.</p></div>
+
+<div class="dua-item"><span class="num">91</span><p class="arabic">اللهم ارحم أختي (أو ابنتي/زوجتي) واغفر لها، واجعل مثواها الفردوس الأعلى.</p></div>
+
+<div class="dua-item"><span class="num">92</span><p class="arabic">اللهم إنها كانت قطعة من قلبي، فارحمها برحمتك الواسعة واجبر مصابنا في فقدها.</p></div>
+
+<div class="dua-item"><span class="num">93</span><p class="arabic">اللهم عوّض شبابها في الجنة، واجعلها من الحور العين المنعمين.</p></div>
+
+<div class="dua-item"><span class="num">94</span><p class="arabic">اللهم اجعلها فرطاً وذخراً لوالديها، وشفيعة مجابة بإذنك.</p></div>
+
+<div class="dua-item"><span class="num">95</span><p class="arabic">اللهم آنس وحشتها في القبر، واجعل الملائكة تؤنسها وتبشرها بالجنة.</p></div>
+
+<div class="dua-item"><span class="num">96</span><p class="arabic">اللهم اجزها عن صبرها وحسن عشرتها خير ما تجزي به عبادك الصالحين.</p></div>
+
+<div class="dua-item"><span class="num">97</span><p class="arabic">اللهم ارحم ضعفها وقلة حيلتها، وتولّها برحمتك يا أرحم الراحمين.</p></div>
+
+<div class="dua-item"><span class="num">98</span><p class="arabic">اللهم اجعل ذكراها طيبة في الدنيا، ومقامها كريماً في الآخرة.</p></div>
+
+<div class="dua-item"><span class="num">99</span><p class="arabic">اللهم اجمعنا بها في دار كرامتك ومستقر رحمتك.</p></div>
+
+<div class="dua-item"><span class="num">100</span><p class="arabic">اللهم اربط على قلوبنا بالصبر والسلوان، واغفر لها مغفرة عامة.</p></div>
+
+<div class="dua-item"><span class="num">101</span><p class="arabic">اللهم في يوم الجمعة المبارك، أنزل على قبرها الضياء والنور والفسحة والسرور.</p></div>
+
+<div class="dua-item"><span class="num">102</span><p class="arabic">اللهم في هذه الساعة المباركة، اجعلها في نعيم لا يزول، وسعادة لا تنتهي.</p></div>
+
+<div class="dua-item"><span class="num">103</span><p class="arabic">اللهم مع نزول الغيث، أمطر على قبرها من سحائب رحمتك ومغفرتك.</p></div>
+
+<div class="dua-item"><span class="num">104</span><p class="arabic">اللهم اروِ قبرها بفيض من رحمتك كما رويت الأرض بمطرك.</p></div>
+
+<div class="dua-item"><span class="num">105</span><p class="arabic">اللهم في جوف الليل، نسألك أن تعتق رقبتها من النار وتدخلها الجنة بلا حساب.</p></div>
+
+<div class="dua-item"><span class="num">106</span><p class="arabic">اللهم إني أسألك في سجودي هذا أن تغفر لها وترحمها وترفع درجتها في عليين.</p></div>
+
+<div class="dua-item"><span class="num">107</span><p class="arabic">اللهم اجعل لها في كل قطرة مطر رحمة ومغفرة ورفعة في الدرجات.</p></div>
+
+<div class="dua-item"><span class="num">108</span><p class="arabic">اللهم بلغها سلامنا ودعاءنا، واجعلها تفرح به في قبرها.</p></div>
+
+<div class="dua-item"><span class="num">109</span><p class="arabic">اللهم اجعل يوم الجمعة يوم عيد وفرح لروحها في قبرها.</p></div>
+
+<div class="dua-item"><span class="num">110</span><p class="arabic">اللهم استجب دعاءنا لها، ولا تردنا خائبين يا مجيب السائلين.</p></div>
+
+<div class="dua-item"><span class="num">111</span><p class="arabic">اللهم أسكنها فسيح جناتك، واغفر لها يا رحمن، وارحمها يا رحيم.</p></div>
+
+<div class="dua-item"><span class="num">112</span><p class="arabic">اللهم اجعلها من أهل الفردوس الأعلى بصحبة النبيين والصديقين والشهداء والصالحين.</p></div>
+
+<div class="dua-item"><span class="num">113</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاغفر لنا وارحمنا وأنت خير الراحمين.</p></div>
+
+<div class="dua-item"><span class="num">114</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اصرف عنا عذاب جهنم إن عذابها كان غراماً.</p></div>
+
+<div class="dua-item"><span class="num">115</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا هب لنا من أزواجنا وذرياتنا قرة أعين واجعلنا للمتقين إماماً.</p></div>
+
+<div class="dua-item"><span class="num">116</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تؤاخذنا إن نسينا أو أخطأنا.</p></div>
+
+<div class="dua-item"><span class="num">117</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اغفر لنا ذنوبنا وإسرافنا في أمرنا وثبت أقدامنا.</p></div>
+
+<div class="dua-item"><span class="num">118</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا من لدنك رحمة وهيئ لنا من أمرنا رشداً.</p></div>
+
+<div class="dua-item"><span class="num">119</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تجعلنا مع القوم الظالمين.</p></div>
+
+<div class="dua-item"><span class="num">120</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار.</p></div>
+
+<div class="dua-item"><span class="num">121</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تزغ قلوبنا بعد إذ هديتنا وهب لنا من لدنك رحمة إنك أنت الوهاب.</p></div>
+
+<div class="dua-item"><span class="num">122</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا بما أنزلت واتبعنا الرسول فاكتبنا مع الشاهدين.</p></div>
+
+<div class="dua-item"><span class="num">123</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا ظلمنا أنفسنا وإن لم تغفر لنا وترحمنا لنكونن من الخاسرين.</p></div>
+
+<div class="dua-item"><span class="num">124</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اكشف عنا العذاب إنا مؤمنون.</p></div>
+
+<div class="dua-item"><span class="num">125</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا إننا آمنا فاغفر لنا ذنوبنا وقنا عذاب النار.</p></div>
+
+<div class="dua-item"><span class="num">126</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاكتبنا مع الشاهدين.</p></div>
+
+<div class="dua-item"><span class="num">127</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تجعلنا فتنة للقوم الظالمين.</p></div>
+
+<div class="dua-item"><span class="num">128</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا أفرغ علينا صبراً وتوفنا مسلمين.</p></div>
+
+<div class="dua-item"><span class="num">129</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اغفر لنا وارحمنا وأنت خير الراحمين.</p></div>
+
+<div class="dua-item"><span class="num">130</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا من لدنك رحمة.</p></div>
+
+<div class="dua-item"><span class="num">131</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تؤاخذنا إن نسينا أو أخطأنا.</p></div>
+
+<div class="dua-item"><span class="num">132</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اغفر لنا ذنوبنا وإسرافنا في أمرنا.</p></div>
+
+<div class="dua-item"><span class="num">133</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة.</p></div>
+
+<div class="dua-item"><span class="num">134</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تزغ قلوبنا بعد إذ هديتنا.</p></div>
+
+<div class="dua-item"><span class="num">135</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاغفر لنا وارحمنا.</p></div>
+
+<div class="dua-item"><span class="num">136</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اصرف عنا عذاب جهنم.</p></div>
+
+<div class="dua-item"><span class="num">137</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا هب لنا من أزواجنا وذرياتنا قرة أعين.</p></div>
+
+<div class="dua-item"><span class="num">138</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تجعلنا مع القوم الظالمين.</p></div>
+
+<div class="dua-item"><span class="num">139</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اكشف عنا العذاب إنا مؤمنون.</p></div>
+
+<div class="dua-item"><span class="num">140</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاغفر لنا ذنوبنا وقنا عذاب النار.</p></div>
+
+<div class="dua-item"><span class="num">141</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاكتبنا مع الشاهدين.</p></div>
+
+<div class="dua-item"><span class="num">142</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تجعلنا فتنة للقوم الظالمين.</p></div>
+
+<div class="dua-item"><span class="num">143</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا أفرغ علينا صبراً وتوفنا مسلمين.</p></div>
+
+<div class="dua-item"><span class="num">144</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اغفر لنا وارحمنا وأنت خير الراحمين.</p></div>
+
+<div class="dua-item"><span class="num">145</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا من لدنك رحمة.</p></div>
+
+<div class="dua-item"><span class="num">146</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تؤاخذنا إن نسينا أو أخطأنا.</p></div>
+
+<div class="dua-item"><span class="num">147</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا اغفر لنا ذنوبنا وإسرافنا في أمرنا.</p></div>
+
+<div class="dua-item"><span class="num">148</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة.</p></div>
+
+<div class="dua-item"><span class="num">149</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا لا تزغ قلوبنا بعد إذ هديتنا.</p></div>
+
+<div class="dua-item"><span class="num">150</span><p class="arabic">اللهم اجعلها من الذين يقولون ربنا آمنا فاغفر لنا وارحمنا.</p></div>
+
+</main>
+
+<footer>
+  <p class="dua">اللهم اجعل هذا العمل صدقة جارية على روحها، واجمعنا بها في جنات النعيم</p>
+  <div class="links">
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </div>
+  <p class="copy">© 2026 — على روح أسماء مختار الحداد</p>
+</footer>
+
+</body>
+</html>

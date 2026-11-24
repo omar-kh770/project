@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>آيات قرآنية على روح المتوفاة — أسماء مختار الحداد</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Reem+Kufi:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-dark:#0a1410;--bg-mid:#12211a;--bg-card:#1a2b22;--gold:#c9a227;--gold-light:#e8d9a0;--gold-bright:#f0d97a;--ivory:#f5f0e6;--muted:#8a9a8f;--shadow:0 20px 60px rgba(0,0,0,.6);}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg-dark);color:var(--ivory);font-family:'Amiri',serif;direction:rtl;line-height:1.9;min-height:100vh;overflow-x:hidden;}
+body::before{content:'';position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 10%,rgba(201,162,39,.10) 0%,transparent 45%),radial-gradient(circle at 80% 80%,rgba(201,162,39,.08) 0%,transparent 45%),radial-gradient(circle at 50% 50%,rgba(26,43,34,.6) 0%,transparent 65%);animation:pulseBg 14s ease-in-out infinite;}
+@keyframes pulseBg{0%,100%{opacity:.8;}50%{opacity:1;}}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:radial-gradient(1px 1px at 20% 30%,rgba(232,217,160,.5),transparent),radial-gradient(1px 1px at 60% 70%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 80% 20%,rgba(232,217,160,.3),transparent),radial-gradient(1px 1px at 40% 90%,rgba(232,217,160,.4),transparent),radial-gradient(1px 1px at 90% 60%,rgba(232,217,160,.3),transparent);background-size:100% 100%;animation:twinkle 8s ease-in-out infinite alternate;}
+@keyframes twinkle{0%{opacity:.4;}100%{opacity:1;}}
+
+.topbar{position:sticky;top:0;z-index:1000;background:rgba(10,20,16,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,162,39,.25);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.topbar .brand{font-family:'Reem Kufi',sans-serif;font-size:22px;color:var(--gold-light);font-weight:700;display:flex;align-items:center;gap:10px;}
+.topbar .brand::before{content:'☪';font-size:28px;color:var(--gold);}
+.topbar nav{display:flex;gap:6px;flex-wrap:wrap;}
+.topbar nav a{color:var(--ivory);text-decoration:none;padding:7px 14px;border:1px solid rgba(201,162,39,.3);border-radius:8px;font-size:15px;transition:all .3s;}
+.topbar nav a:hover,.topbar nav a.active{background:rgba(201,162,39,.2);border-color:var(--gold);color:var(--gold-bright);}
+
+.page-header{text-align:center;padding:90px 20px 60px;background:linear-gradient(180deg,var(--bg-mid) 0%,var(--bg-dark) 100%);border-bottom:1px solid rgba(201,162,39,.2);position:relative;overflow:hidden;}
+.page-header::before{content:'☪';position:absolute;top:40px;right:50%;transform:translateX(50%);font-size:70px;color:rgba(201,162,39,.12);}
+.page-header h1{font-family:'Aref Ruqaa',serif;font-size:clamp(40px,6.5vw,76px);color:var(--gold-light);margin-bottom:12px;text-shadow:0 0 60px rgba(201,162,39,.5);letter-spacing:2px;position:relative;}
+.page-header p{color:var(--gold);font-size:clamp(17px,2.5vw,22px);font-family:'Reem Kufi',sans-serif;position:relative;letter-spacing:1px;}
+
+main{max-width:1050px;margin:0 auto;padding:60px 24px 90px;}
+
+.verse-item{background:linear-gradient(160deg,var(--bg-card),#0f1a14);border:1px solid rgba(201,162,39,.22);border-radius:16px;padding:40px 32px;margin-bottom:22px;transition:all .4s;position:relative;overflow:hidden;text-align:center;}
+.verse-item::before{content:'';position:absolute;top:0;right:0;width:4px;height:100%;background:var(--gold);opacity:0;transition:opacity .4s;}
+.verse-item:hover{border-color:var(--gold);transform:translateX(-6px);box-shadow:0 15px 40px rgba(0,0,0,.5);}
+.verse-item:hover::before{opacity:1;}
+.verse-item .verse{font-family:'Scheherazade New',serif;font-size:clamp(23px,3vw,30px);line-height:2.3;color:var(--gold-light);}
+.verse-item .source{font-size:15px;color:var(--muted);border-top:1px dashed rgba(201,162,39,.25);padding-top:12px;margin-top:18px;font-family:'Reem Kufi',sans-serif;}
+.verse-item .source .tag{color:var(--gold);font-size:13px;letter-spacing:1px;}
+
+footer{text-align:center;padding:80px 20px 50px;border-top:1px solid rgba(201,162,39,.2);margin-top:60px;background:linear-gradient(180deg,transparent,rgba(18,33,26,.6));}
+footer .dua{font-family:'Scheherazade New',serif;font-size:22px;color:var(--gold-light);margin-bottom:22px;}
+footer .links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:26px;font-size:15px;}
+footer .links a{color:var(--muted);text-decoration:none;transition:color .3s;}
+footer .links a:hover{color:var(--gold);}
+footer .copy{color:var(--muted);font-size:14px;}
+
+@media(max-width:600px){
+  .topbar{padding:12px;}.topbar .brand{font-size:17px;}.topbar nav a{font-size:12px;padding:6px 9px;}
+  .verse-item{padding:28px 20px;}.page-header{padding:60px 16px 40px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">أسماء مختار الحداد</div>
+  <nav>
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html" class="active">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </nav>
+</div>
+
+<header class="page-header">
+  <h1>آيات قرآنية</h1>
+  <p>على روح المتوفاة</p>
+</header>
+
+<main>
+
+<div class="verse-item"><p class="verse">﴿وَاللَّهُ غَفُورٌ رَحِيمٌ﴾</p><p class="source"><span class="tag">البقرة: 218</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ﴾</p><p class="source"><span class="tag">آل عمران: 16</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ﴾</p><p class="source"><span class="tag">آل عمران: 193</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ اللَّهَ كَانَ عَفُوًّا غَفُورًا﴾</p><p class="source"><span class="tag">النساء: 43</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿كَتَبَ رَبُّكُمْ عَلَى نَفْسِهِ الرَّحْمَةَ﴾</p><p class="source"><span class="tag">الأنعام: 54</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَرَبُّكَ الْغَفُورُ ذُو الرَّحْمَةِ﴾</p><p class="source"><span class="tag">الكهف: 58</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَرَحْمَتِي وَسِعَتْ كُلَّ شَيْءٍ﴾</p><p class="source"><span class="tag">الأعراف: 156</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿نَبِّئْ عِبَادِي أَنِّي أَنَا الْغَفُورُ الرَّحِيمُ﴾</p><p class="source"><span class="tag">الحجر: 49</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَقُلْ رَبِّ اغْفِرْ وَارْحَمْ وَأَنْتَ خَيْرُ الرَّاحِمِينَ﴾</p><p class="source"><span class="tag">المؤمنون: 118</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿قُلْ يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَى أَنْفُسِهِمْ لَا تَقْنَطُوا مِنْ رَحْمَةِ اللَّهِ إِنَّ اللَّهَ يَغْفِرُ الذُّنُوبَ جَمِيعًا إِنَّهُ هُوَ الْغَفُورُ الرَّحِيمُ﴾</p><p class="source"><span class="tag">الزمر: 53</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ رَبَّكَ وَاسِعُ الْمَغْفِرَةِ﴾</p><p class="source"><span class="tag">النجم: 32</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَهُوَ الْغَفُورُ الْوَدُودُ﴾</p><p class="source"><span class="tag">البروج: 14</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ﴾</p><p class="source"><span class="tag">إبراهيم: 41</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ﴾</p><p class="source"><span class="tag">نوح: 28</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿فَاللَّهُ خَيْرٌ حَافِظًا وَهُوَ أَرْحَمُ الرَّاحِمِينَ﴾</p><p class="source"><span class="tag">يوسف: 64</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَبَشِّرِ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أَنَّ لَهُمْ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ﴾</p><p class="source"><span class="tag">البقرة: 25</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَالَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أُولَئِكَ أَصْحَابُ الْجَنَّةِ هُمْ فِيهَا خَالِدُونَ﴾</p><p class="source"><span class="tag">البقرة: 82</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿لَهُمْ دَارُ السَّلَامِ عِنْدَ رَبِّهِمْ وَهُوَ وَلِيُّهُمْ بِمَا كَانُوا يَعْمَلُونَ﴾</p><p class="source"><span class="tag">الأنعام: 127</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿يُبَشِّرُهُمْ رَبُّهُمْ بِرَحْمَةٍ مِنْهُ وَرِضْوَانٍ وَجَنَّاتٍ لَهُمْ فِيهَا نَعِيمٌ مُقِيمٌ﴾</p><p class="source"><span class="tag">التوبة: 21</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿خَالِدِينَ فِيهَا أَبَدًا إِنَّ اللَّهَ عِنْدَهُ أَجْرٌ عَظِيمٌ﴾</p><p class="source"><span class="tag">التوبة: 22</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ﴾</p><p class="source"><span class="tag">يونس: 62</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿سَلَامٌ عَلَيْكُمْ بِمَا صَبَرْتُمْ فَنِعْمَ عُقْبَى الدَّارِ﴾</p><p class="source"><span class="tag">الرعد: 24</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ طُوبَى لَهُمْ وَحُسْنُ مَآبٍ﴾</p><p class="source"><span class="tag">الرعد: 29</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿ادْخُلُوهَا بِسَلَامٍ آمِنِينَ﴾</p><p class="source"><span class="tag">الحجر: 46</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿لَا يَمَسُّهُمْ فِيهَا نَصَبٌ وَمَا هُمْ مِنْهَا بِمُخْرَجِينَ﴾</p><p class="source"><span class="tag">الحجر: 48</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿الَّذِينَ تَتَوَفَّاهُمُ الْمَلَائِكَةُ طَيِّبِينَ يَقُولُونَ سَلَامٌ عَلَيْكُمُ ادْخُلُوا الْجَنَّةَ بِمَا كُنْتُمْ تَعْمَلُونَ﴾</p><p class="source"><span class="tag">النحل: 32</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ كَانَتْ لَهُمْ جَنَّاتُ الْفِرْدَوْسِ نُزُلًا﴾</p><p class="source"><span class="tag">الكهف: 107</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿خَالِدِينَ فِيهَا لَا يَبْغُونَ عَنْهَا حِوَلًا﴾</p><p class="source"><span class="tag">الكهف: 108</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿لَا يَسْمَعُونَ فِيهَا لَغْوًا إِلَّا سَلَامًا وَلَهُمْ رِزْقُهُمْ فِيهَا بُكْرَةً وَعَشِيًّا﴾</p><p class="source"><span class="tag">مريم: 62</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿تِلْكَ الْجَنَّةُ الَّتِي نُورِثُ مِنْ عِبَادِنَا مَنْ كَانَ تَقِيًّا﴾</p><p class="source"><span class="tag">مريم: 63</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿لَا يَحْزُنُهُمُ الْفَزَعُ الْأَكْبَرُ وَتَتَلَقَّاهُمُ الْمَلَائِكَةُ هَذَا يَوْمُكُمُ الَّذِي كُنْتُمْ تُوعَدُونَ﴾</p><p class="source"><span class="tag">الأنبياء: 103</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿أُولَئِكَ يُجْزَوْنَ الْغُرْفَةَ بِمَا صَبَرُوا وَيُلَقَّوْنَ فِيهَا تَحِيَّةً وَسَلَامًا﴾</p><p class="source"><span class="tag">الفرقان: 75</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿فَلَا تَعْلَمُ نَفْسٌ مَا أُخْفِيَ لَهُمْ مِنْ قُرَّةِ أَعْيُنٍ جَزَاءً بِمَا كَانُوا يَعْمَلُونَ﴾</p><p class="source"><span class="tag">السجدة: 17</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿تَحِيَّتُهُمْ يَوْمَ يَلْقَوْنَهُ سَلَامٌ وَأَعَدَّ لَهُمْ أَجْرًا كَرِيمًا﴾</p><p class="source"><span class="tag">الأحزاب: 44</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَقَالُوا الْحَمْدُ لِلَّهِ الَّذِي أَذْهَبَ عَنَّا الْحَزَنَ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ﴾</p><p class="source"><span class="tag">فاطر: 34</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿الَّذِي أَحَلَّنَا دَارَ الْمُقَامَةِ مِنْ فَضْلِهِ لَا يَمَسُّنَا فِيهَا نَصَبٌ وَلَا يَمَسُّنَا فِيهَا لُغُوبٌ﴾</p><p class="source"><span class="tag">فاطر: 35</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ أَصْحَابَ الْجَنَّةِ الْيَوْمَ فِي شُغُلٍ فَاكِهُونَ﴾</p><p class="source"><span class="tag">يس: 55</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَسِيقَ الَّذِينَ اتَّقَوْا رَبَّهُمْ إِلَى الْجَنَّةِ زُمَرًا حَتَّى إِذَا جَاءُوهَا وَفُتِحَتْ أَبْوَابُهَا وَقَالَ لَهُمْ خَزَنَتُهَا سَلَامٌ عَلَيْكُمْ طِبْتُمْ فَادْخُلُوهَا خَالِدِينَ﴾</p><p class="source"><span class="tag">الزمر: 73</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ الَّذِينَ قَالُوا رَبُّنَا اللَّهُ ثُمَّ اسْتَقَامُوا تَتَنَزَّلُ عَلَيْهِمُ الْمَلَائِكَةُ أَلَّا تَخَافُوا وَلَا تَحْزَنُوا وَأَبْشِرُوا بِالْجَنَّةِ الَّتِي كُنْتُمْ تُوعَدُونَ﴾</p><p class="source"><span class="tag">فصلت: 30</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿نَحْنُ أَوْلِيَاؤُكُمْ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ وَلَكُمْ فِيهَا مَا تَشْتَهِي أَنْفُسُكُمْ وَلَكُمْ فِيهَا مَا تَدَّعُونَ﴾</p><p class="source"><span class="tag">فصلت: 31</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿نُزُلًا مِنْ غَفُورٍ رَحِيمٍ﴾</p><p class="source"><span class="tag">فصلت: 32</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿ادْخُلُوا الْجَنَّةَ أَنْتُمْ وَأَزْوَاجُكُمْ تُحْبَرُونَ﴾</p><p class="source"><span class="tag">الزخرف: 70</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿يُطَافُ عَلَيْهِمْ بِصِحَافٍ مِنْ ذَهَبٍ وَأَكْوَابٍ وَفِيهَا مَا تَشْتَهِيهِ الْأَنْفُسُ وَتَلَذُّ الْأَعْيُنُ وَأَنْتُمْ فِيهَا خَالِدُونَ﴾</p><p class="source"><span class="tag">الزخرف: 71</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ الْمُتَّقِينَ فِي مَقَامٍ أَمِينٍ * فِي جَنَّاتٍ وَعُيُونٍ﴾</p><p class="source"><span class="tag">الدخان: 51-52</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿يَدْعُونَ فِيهَا بِكُلِّ فَاكِهَةٍ آمِنِينَ * لَا يَذُوقُونَ فِيهَا الْمَوْتَ إِلَّا الْمَوْتَةَ الْأُولَى وَوَقَاهُمْ عَذَابَ الْجَحِيمِ﴾</p><p class="source"><span class="tag">الدخان: 55-56</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿إِنَّ الْمُتَّقِينَ فِي جَنَّاتٍ وَنَهَرٍ * فِي مَقْعَدِ صِدْقٍ عِنْدَ مَلِيكٍ مُقْتَدِرٍ﴾</p><p class="source"><span class="tag">القمر: 54-55</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿فَأَمَّا إِنْ كَانَ مِنَ الْمُقَرَّبِينَ * فَرَوْحٌ وَرَيْحَانٌ وَجَنَّةُ نَعِيمٍ﴾</p><p class="source"><span class="tag">الواقعة: 88-89</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَأَمَّا إِنْ كَانَ مِنْ أَصْحَابِ الْيَمِينِ * فَسَلَامٌ لَكَ مِنْ أَصْحَابِ الْيَمِينِ﴾</p><p class="source"><span class="tag">الواقعة: 90-91</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ * ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً * فَادْخُلِي فِي عِبَادِي * وَادْخُلِي جَنَّتِي﴾</p><p class="source"><span class="tag">الفجر: 27-30</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَبَشِّرِ الصَّابِرِينَ * الَّذِينَ إِذَا أَصَابَتْهُمْ مُصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ * أُولَئِكَ عَلَيْهِمْ صَلَوَاتٌ مِنْ رَبِّهِمْ وَرَحْمَةٌ وَأُولَئِكَ هُمُ الْمُهْتَدُونَ﴾</p><p class="source"><span class="tag">البقرة: 155-157</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ الْقِيَامَةِ فَمَنْ زُحْزِحَ عَنِ النَّارِ وَأُدْخِلَ الْجَنَّةَ فَقَدْ فَازَ﴾</p><p class="source"><span class="tag">آل عمران: 185</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَالْآخِرَةُ خَيْرٌ وَأَبْقَى﴾</p><p class="source"><span class="tag">الأعلى: 17</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿فَإِنَّ مَعَ الْعُسْرِ يُسْرًا * إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾</p><p class="source"><span class="tag">الشرح: 5-6</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ﴾</p><p class="source"><span class="tag">البقرة: 201</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ﴾</p><p class="source"><span class="tag">آل عمران: 8</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ﴾</p><p class="source"><span class="tag">إبراهيم: 40</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ﴾</p><p class="source"><span class="tag">الأنبياء: 87</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ﴾</p><p class="source"><span class="tag">البقرة: 186</span></p></div>
+
+<div class="verse-item"><p class="verse">﴿فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ﴾</p><p class="source"><span class="tag">البقرة: 152</span></p></div>
+
+</main>
+
+<footer>
+  <p class="dua">اللهم اجعل هذا العمل صدقة جارية على روحها، واجمعنا بها في جنات النعيم</p>
+  <div class="links">
+    <a href="index.htm">الرئيسية</a>
+    <a href="duas.html">الأدعية</a>
+    <a href="quran.html">الآيات</a>
+    <a href="tasbih.html">السبحة</a>
+    <a href="fadl.html">فضل الدعاء</a>
+    <a href="sadaqa.html">الصدقة الجارية</a>
+  </div>
+  <p class="copy">© 2026 — على روح أسماء مختار الحداد</p>
+</footer>
+
+</body>
+</html>
